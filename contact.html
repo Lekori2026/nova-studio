@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact &amp; Pre-Orders | North Star Bakery</title>
+    <meta
+      name="description"
+      content="Get in touch with North Star Bakery or place a pre-order for breads, pastries, and celebration cakes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">N</span>
+          <span>North Star Bakery</span>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="active">Pre-Orders</a>
+        </nav>
+
+        <button class="nav-button">Order today</button>
+      </header>
+
+      <main class="contact-layout">
+        <section class="contact-info">
+          <p class="eyebrow">Visit or order</p>
+          <h1>Find us &amp; get in touch.</h1>
+          <p>
+            Have a question about our ingredients, or want to secure your favorite items for the weekend? Drop us a line or swing by the counter!
+          </p>
+
+          <div class="details-box">
+            <h3>📍 Location</h3>
+            <p>
+              104 Stella Lane, Neighborhood Center<br />
+              <em>Right across the street from the commuter rail station</em>
+            </p>
+
+            <h3>⏰ Hours of operation</h3>
+            <p>
+              Tuesday – Sunday: 6:30 AM – 2:00 PM<br />
+              Monday: Closed for deep cleaning and resting our starters
+            </p>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Inquiry &amp; pre-order request</h2>
+          <p>
+            Please note: All pre-orders require at least <strong>48 hours notice</strong>. We will review your request and send an email confirmation to finalize details.
+          </p>
+
+          <form action="#" method="POST" class="bakery-form">
+            <div class="form-group">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+            </div>
+
+            <div class="form-group">
+              <label for="request-type">Nature of request *</label>
+              <select id="request-type" name="request-type" required>
+                <option value="">-- Please select --</option>
+                <option value="pre-order">Pre-order items for pickup</option>
+                <option value="event">Event catering inquiry</option>
+                <option value="general">General question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pickup-date">Requested pickup date</label>
+              <input type="date" id="pickup-date" name="pickup-date" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your order details or inquiry *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Let us know what items or quantities you want, or ask your question here..."></textarea>
+            </div>
+
+            <button type="submit" class="primary submit-btn">Submit request</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="brand">
+          <span class="brand-mark">N</span>
+          <span>North Star Bakery</span>
+        </div>
+        <p>© 2026 North Star Bakery. Baked fresh daily for our community.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
